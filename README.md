@@ -1,4 +1,4 @@
-# Глубоуое погружение в глубокое обучение / Deep Dive in Deep Learning
+# Глубокое погружение в глубокое обучение / Deep Dive in Deep Learning
 
 ## Russian
 
