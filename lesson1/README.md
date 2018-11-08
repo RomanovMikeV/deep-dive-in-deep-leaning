@@ -110,7 +110,7 @@ Jupyter Notebook значений <img src="/lesson1/tex/332cc365a4987aacce0ead0
 3) Сделайте метод ```metrics(self, output, target)```. Сюда будут приходить точно
 такие же списки, как и в метод ```criterion```. В этом задании мы будем
 использовать метрику "доля точек с ошибкой меньше заданной":
-<p align="center"><img src="/lesson1/tex/864fb8323dbdcc47539e9f077d976e2c.svg?invert_in_darkmode&sanitize=true" align=middle width=448.80627825pt height=62.6919018pt/></p>
+<p align="center"><img src="/lesson1/tex/890c292877152a94f346c8835bfbe065.svg?invert_in_darkmode&sanitize=true" align=middle width=220.16945280000002pt height=47.806078649999996pt/></p>
 Здесь <img src="/lesson1/tex/8e6f8772884838ad7db8233311f53511.svg?invert_in_darkmode&sanitize=true" align=middle width=37.47063044999999pt height=31.50689519999998pt/> -- результат работы нейронной сети в точке <img src="/lesson1/tex/9fc20fb1d3825674c6a279cb0d5ca636.svg?invert_in_darkmode&sanitize=true" align=middle width=14.045887349999989pt height=14.15524440000002pt/>, <img src="/lesson1/tex/2b442e3e088d1b744730822d18e7aa21.svg?invert_in_darkmode&sanitize=true" align=middle width=12.710331149999991pt height=14.15524440000002pt/> --
 таргетное значение. Возьмите <img src="/lesson1/tex/ccc8c36bd75b0a3fd820174d730dea02.svg?invert_in_darkmode&sanitize=true" align=middle width=150.96466109999997pt height=21.18721440000001pt/>. Это и будут
 наши метрики. Верните словарь из метрик.
