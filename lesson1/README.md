@@ -105,7 +105,9 @@ Jupyter Notebook значений <img src="/lesson1/tex/332cc365a4987aacce0ead0
 будут содержать по одному тензору. В нашем случае функцией ошибки будет
 среднеквадратичное отклонение (Mean Squared Error, MSE). Используя операции
 пакета torch расчитайте значение MSE между output[0] и target[0] и верните
-результат.
+результат. Формула для расчета среднеквадратичной ошибки:
+
+<p align="center"><img src="/lesson1/tex/6e1d54a974cb6dd25634e065908fddbb.svg?invert_in_darkmode&sanitize=true" align=middle width=265.7545737pt height=47.806078649999996pt/></p>
 
 3) Сделайте метод ```metrics(self, output, target)```. Сюда будут приходить точно
 такие же списки, как и в метод ```criterion```. В этом задании мы будем
