@@ -9,13 +9,13 @@
 <a name="russian"/>
 
 # Инструкции
-1. [Постановка задачи](#rus_statement)
-2. [Написание кода](#rus_solution)
+* [Постановка задачи](#rus_statement)
+* [Написание кода](#rus_solution)
     * [Датасет](#rus_dataset)
     * [Модель](#rus_model)
     * [Обработчик модели](#rus_socket)
-3. [Тренировка модели](#rus_training)
-4. [Помощь](#rus_help)
+* [Тренировка модели](#rus_training)
+* [Помощь](#rus_help)
 
 ## Постановка задачи <a name="rus_statement"/>
 
