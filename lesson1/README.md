@@ -24,8 +24,7 @@
 
 [Помощь](#rus_help)
 
-<a name="rus_statement"/>
-## Постановка задачи
+## Постановка задачи <a name="rus_statement"/>
 
 В этом уроке мы решим задачу регрессии при помощи нейронной сети. Мы будем
 предсказывать значение некоторой простой функции (например, синуса или косинуса)
@@ -37,11 +36,10 @@
 Стоит отметить, что это можно сделать с любой точностью при помощи сигмоидной
 нейронной сети (функции активации -- сигмоиды) для ограниченной функции <img src="/lesson1/tex/7997339883ac20f551e7f35efff0a2b9.svg?invert_in_darkmode&sanitize=true" align=middle width=31.99783454999999pt height=24.65753399999998pt/> с конечным числом разрывов.
 
-<a name="rus_solution"/>
-## Написание кода
 
-<a name="rus_dataset"/>
-### Create a Dataset / Сделайте датасет
+## Написание кода <a name="rus_solution"/>
+
+### Create a Dataset / Сделайте датасет <a name="rus_dataset"/>
 
 В этом уроке мы сделаем датасет сами. Для этого мы возьмем некоторую функцию <img src="/lesson1/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/>
 (ограниченную, имеющую не больше, чем счетное количество разрывов), и сделаем
@@ -101,8 +99,7 @@
 индексов. Посмотрите, как выглядят наши данные: сделайте график при помощи
 Jupyter Notebook значений <img src="/lesson1/tex/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode&sanitize=true" align=middle width=9.39498779999999pt height=14.15524440000002pt/> и <img src="/lesson1/tex/7997339883ac20f551e7f35efff0a2b9.svg?invert_in_darkmode&sanitize=true" align=middle width=31.99783454999999pt height=24.65753399999998pt/>.
 
-<a name="rus_model"/>
-### Сделайте модель
+### Сделайте модель <a name="rus_model"/>
 
 Мы уже сделали скрипт датасета -- это половина работы. Вторая половина --
 определиться с архитектурой модели, лосс-функцией, метриками, оптимизатором.
@@ -123,8 +120,7 @@ Jupyter Notebook значений <img src="/lesson1/tex/332cc365a4987aacce0ead0
 
 Таким образом, мы сделали нашу нейронную сеть.
 
-<a name="rus_socket"/>
-### Сделайте обработчик модели (Socket)
+### Сделайте обработчик модели (Socket) <a name="rus_socket"/>
 
 В этом классе находится вся информация о том, как взаимодействовать с моделью.
 
@@ -155,8 +151,7 @@ Jupyter Notebook значений <img src="/lesson1/tex/332cc365a4987aacce0ead0
 таргетное значение. Возьмите <img src="/lesson1/tex/ccc8c36bd75b0a3fd820174d730dea02.svg?invert_in_darkmode&sanitize=true" align=middle width=150.96466109999997pt height=21.18721440000001pt/>. Это и будут
 наши метрики. Верните словарь из метрик.
 
-<a name="rus_training"/>
-## Тренировка модели
+## Тренировка модели <a name="rus_training"/>
 
 1) Запустите процесс тренировки
 ```
@@ -182,7 +177,6 @@ scorch-train --model model.py --dataset dataset.py --epochs 100 -cp 100_epochs
 
 4) считайте результат из ноутбука и сделайте график получившейся функции
 
-<a name="rus_help"/>
-## Помощь
+## Помощь <a name="rus_help"/>
 
 Пример решения задачи можно найти в файле ```Solution.ipynb.pdf```
