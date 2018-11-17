@@ -158,15 +158,15 @@ scorch-train --model model.py --dataset dataset.py --epochs 100 -cp 100_epochs
 
 3. Оцените визульно качество обучения:
 
- * сделайте тестовый прогон модели с 10 эпохами
- ```
- scorch-test --model model.py --dataset dataset.py -cp 10_epochs --prefix 10_epochs
- ```
+      * сделайте тестовый прогон модели с 10 эпохами
+      ```
+      scorch-test --model model.py --dataset dataset.py -cp 10_epochs --prefix 10_epochs
+      ```
 
- * cделайте тестовый прогон модели со 100 эпохами
- ```
- scorch-test --model model.py --dataset dataset.py -cp 100_epochs --prefix 100_epochs
- ```
+      * cделайте тестовый прогон модели со 100 эпохами
+      ```
+      scorch-test --model model.py --dataset dataset.py -cp 100_epochs --prefix 100_epochs
+      ```
 
 4. считайте результат из ноутбука и сделайте график получившейся функции
 
