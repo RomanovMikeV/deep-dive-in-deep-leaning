@@ -4,11 +4,18 @@
 
 [Русский](#russian)
 
-<a name="english"/>
 
-# Lesson instructions
 
-## Problem statement
+# Lesson instructions <a name="english"/>
+* [Problem statement](#eng_statement)
+* [Code writing](#eng_solution)
+    * [Dataset](#eng_dataset)
+    * [Model](#eng_model)
+    * [Model processing](#eng_socket)
+* [Training](#eng_training)
+* [Help](#eng_help)
+
+## Problem statement <a name="eng_statement"/>
 
 In this lesson we are going to make a network that does regression. We will
 predict the value of some basic function such as sine or cosine in a given
@@ -21,8 +28,8 @@ Note that this is possible to do with any
 precision using Neural Network with sigmoid activation functions when <img src="/lesson1/tex/7997339883ac20f551e7f35efff0a2b9.svg?invert_in_darkmode&sanitize=true" align=middle width=31.99783454999999pt height=24.65753399999998pt/> is bounded and has
 finite amount of the discontinuities.
 
-## Instructions
-### Create a Dataset
+## Instructions <a name="eng_instructions"/>
+### Create a Dataset <a name="eng_dataset"/>
 
 In this lesson we will generate the dataset by ourselves. To do this we will
 take some function <img src="/lesson1/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/> (bounded and that has less than limited amount of
@@ -76,7 +83,7 @@ order from 0 to N (using ```numpy.arange```).
 * Check that ```DataSet``` works in
 all the modes (```train```, ```valid```, ```test```) for all the indices. Observe your data: plot <img src="/lesson1/tex/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode&sanitize=true" align=middle width=9.39498779999999pt height=14.15524440000002pt/> and noisy <img src="/lesson1/tex/7997339883ac20f551e7f35efff0a2b9.svg?invert_in_darkmode&sanitize=true" align=middle width=31.99783454999999pt height=24.65753399999998pt/> using Jupyter Notebook.
 
-### Create a Model
+### Create a Model <a name="eng_model"/>
 
 We have already completed the dataset script -- this is half of the task. The second half is to make a model, loss function, metrics and optimizer.
 
@@ -89,7 +96,7 @@ Carry out the computations in the following way: input -> hidden_layer -> sigmoi
 
 Thus, we have completed our Neural Network.
 
-### Make a Socket (model processor)
+### Make a Socket (model processor) <a name="eng_socket"/>
 
 This class should contain all the information about how the Model class should be treated.
 
@@ -109,7 +116,7 @@ define trainable modules (all of the network's layers), optimzer and parameter f
 Here <img src="/lesson1/tex/8e6f8772884838ad7db8233311f53511.svg?invert_in_darkmode&sanitize=true" align=middle width=37.47063044999999pt height=31.50689519999998pt/> is an output of Neural Network in <img src="/lesson1/tex/9fc20fb1d3825674c6a279cb0d5ca636.svg?invert_in_darkmode&sanitize=true" align=middle width=14.045887349999989pt height=14.15524440000002pt/> point, <img src="/lesson1/tex/2b442e3e088d1b744730822d18e7aa21.svg?invert_in_darkmode&sanitize=true" align=middle width=12.710331149999991pt height=14.15524440000002pt/> -- target value. Choose <img src="/lesson1/tex/ccc8c36bd75b0a3fd820174d730dea02.svg?invert_in_darkmode&sanitize=true" align=middle width=150.96466109999997pt height=21.18721440000001pt/>. These are our metrics. Return the dictionary containing metrics values.
 Assign one of the metrics to the key ```"main"``` of the dictionary.
 
-# Model training
+# Model training <a name="eng_training"/>
 
 Launch training process for 10 epochs.
 ```
@@ -135,14 +142,12 @@ scorch-test --model model.py --dataset dataset.py -cp 100_epochs --prefix 100_ep
 
 2) read results of the test pass into the Jupyter Notebook and plot the results.
 
-# Help
+# Help <a name="eng_help"/>
 
 If you have problems during completing this task, you may find example solution [here](https://github.com/RomanovMikeV/deep-dive-in-deep-leaning/blob/master/lesson1/Solution.ipynb)
 
 
-<a name="russian"/>
-
-# Инструкции
+# Инструкции <a name="russian"/>
 * [Постановка задачи](#rus_statement)
 * [Написание кода](#rus_solution)
     * [Датасет](#rus_dataset)
