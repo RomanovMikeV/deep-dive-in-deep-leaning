@@ -1,3 +1,11 @@
+* [English](#english)
+
+* [Русский](#russian)
+
+<a name="english"/>
+
+<a name="russian"/>
+
 # Инструкции
 
 ## Постановка задачи
