@@ -1,7 +1,10 @@
-[English](# Instructions)
-[Русский](# Инструкции)
+* [English](#english)
 
-# Instructions
+* [Русский](#russian)
+
+<a name="english"/>
+
+<a name="russian"/>
 
 # Инструкции
 
