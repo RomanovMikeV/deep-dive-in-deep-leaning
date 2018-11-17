@@ -172,4 +172,4 @@ scorch-train --model model.py --dataset dataset.py --epochs 100 -cp 100_epochs
 
 ## Помощь <a name="rus_help"/>
 
-Пример решения задачи можно найти в файле ```Solution.ipynb.pdf```
+Пример решения задачи можно найти в файле [ноутбуке](https://github.com/RomanovMikeV/deep-dive-in-deep-leaning/blob/master/lesson1/Solution.ipynb)
